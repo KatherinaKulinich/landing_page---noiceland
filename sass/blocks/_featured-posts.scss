@@ -1,0 +1,13 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.featured-posts {
+    @include paddingY(90px, 90px);
+    @include column(40px);
+    align-items: flex-start;
+
+    &__title {
+        @include card-name-category;
+        @include marginY-0;
+    }
+}

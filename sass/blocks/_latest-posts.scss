@@ -1,0 +1,27 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.latest-posts {
+    @include paddingY(90px, 90px);
+    @include column(40px);
+    align-items: flex-start;
+
+    &__title {
+        @include card-name-category;
+        @include marginY-0;
+    }
+
+    &__button {
+        align-self: center;
+        @include card-name-category(#000000);
+        padding: 21px 26px;
+        border: 1px solid #000000;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $category-text-color;
+            color: #FFFFFF;
+            border-color: sandybrown;
+        }
+    }
+}

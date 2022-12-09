@@ -2,10 +2,16 @@
 @use '../mixins' as *;
 
 .main-post {
-    @include paddingY(60px, 30px);
+    @include paddingY(60px, 90px);
+    border-bottom: $separator;
     display: flex;
-    gap: 30px;
-
+    flex-direction: column;
+    gap: 60px;
+    
+    &__preview {
+        display: flex;
+        gap: 30px;
+    }
 
     &__information {
         @include column(0);
@@ -35,6 +41,8 @@
 
 @media (min-width: 768px) {
     .main-post {
-        gap: 0;
+        &__preview {
+            gap: 0;
+        }
     }
 }

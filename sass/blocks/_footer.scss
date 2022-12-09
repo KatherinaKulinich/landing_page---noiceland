@@ -1,0 +1,145 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+.footer {
+    @include paddingY(90px, 90px);
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #4D4D4D;
+    }
+
+    &__copyright-text {
+        @include marginY-0;
+        @include card-name-category;
+    }
+
+    &__navigation {
+        @include paddingY(60px, 70px);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__subtitle-text {
+        @include card-name-category;
+        margin-bottom: 20px;
+    }
+
+    &__text-item {
+        @include font($franklin-font, 400, 14px, 24px, #FFFFFF);
+        text-decoration: none;
+
+        &:hover {
+            color: sandybrown;
+        }
+    }
+
+    &__categories-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__categories-item {
+        width: calc(50% - 30px);
+    }
+
+    &__form {
+       font-size: 0;
+    }
+
+    &__form-field {
+        height: 50px;
+        display: flex;
+    }
+
+    &__form-input {
+        padding: 18px 22px;
+        height: 100%;
+        width: 230px;
+        border: 1px solid #CCCCCC;
+        @include card-name-category;
+        outline: none;
+
+        &:focus {
+            caret-color: sandybrown;
+        }
+    }
+
+    &__form-button {
+        height: 100%;
+        width: 80px;
+        background-color: #000000;
+        @include card-name-category(#FFFFFF);
+        border: none;
+
+        &:hover {
+            background-color: #4D4D4D;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__other-info {
+        width: 33.33%;
+    }
+
+    &__other-info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+@media  (min-width: 540px) {
+    .footer {
+        &__copyright {
+            flex-direction: row;
+            gap: 0;
+            padding-bottom: 60px;
+        }
+
+        &__categories-item {
+            width: calc(33.3% - 45px);
+        }
+    }
+}
+
+@media  (min-width: 768px) {
+    .footer {
+
+        &__navigation {
+            flex-direction: row;
+            gap: 0;
+        }
+
+        &__categories-item {
+            width: calc(33.3% - 20px);
+        }
+    }
+}
+
+@media  (min-width: 1024px) {
+    .footer {
+        &__categories-item {
+            width: calc(25% - 20px);
+        }
+    }
+}
+
