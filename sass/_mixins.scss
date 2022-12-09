@@ -1,12 +1,12 @@
 @use  './variables' as *;
 
-@mixin card-category($color: $category-text-color) {
+@mixin card-name-category ($text-col: $category-text-color) {
     font-family: $franklin-font;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
-    color: $color;
+    color: $text-col;
     text-transform: uppercase;
 }
 
@@ -16,9 +16,10 @@
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    text-transform: uppercase;
 }
 
-@mixin card-category {
+@mixin card-author {
     font-family: $franklin-font;
     font-weight: 700;
     font-size: 10px;

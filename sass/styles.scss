@@ -14,7 +14,7 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   sm: 0,
-  md: 768px,
+  md: 720px,
   lg: 1060px,
   xl: 1200px
 );
@@ -32,3 +32,4 @@ $container-max-widths: (
 @import './body';
 
 @import './blocks/header';
+@import './blocks/main-post';

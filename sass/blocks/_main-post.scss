@@ -1,0 +1,40 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.main-post {
+    @include paddingY(60px, 30px);
+    display: flex;
+    gap: 30px;
+
+
+    &__information {
+        @include column(0);
+    }
+
+    &__category {
+        @include card-name-category($category-text-color);
+        margin-bottom: 18px;
+    }
+
+    &__title {
+        @include font($tenor-font, 400, 36px, 42px, #000000);
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+
+    &__description {
+        @include font($serif-font, 400, 16px, 24px, $text-secondary-color);
+        margin-bottom: 30px;
+    }
+
+    &__author {
+        @include card-author;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-post {
+        gap: 0;
+    }
+}
