@@ -1,0 +1,54 @@
+@use  './variables' as *;
+
+@mixin card-category($color: $category-text-color) {
+    font-family: $franklin-font;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: $color;
+    text-transform: uppercase;
+}
+
+@mixin card-title {
+    font-family: $tenor-font;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@mixin card-category {
+    font-family: $franklin-font;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+@mixin font($fam, $fw, $fs, $lh, $color) {
+    font-family: $fam;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin marginY-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin paddingY($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin column($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+

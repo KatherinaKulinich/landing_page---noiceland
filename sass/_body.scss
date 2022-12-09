@@ -1,0 +1,17 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.body {
+    &__header {
+        background-color: #FFFFFF;
+        border-bottom: $separator;
+    }
+
+    &__main {
+        background-color: #FFFFFF;
+    }
+    
+    &__footer {
+        background-color: #141414;
+    }
+}

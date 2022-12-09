@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="stylesheet" href="./css/styles.min.css">
     <title>NOICELAND</title>
 
 </head>
 <body class="body">
     <header class="body__header">
-        <div class="header">
-            <img 
-                src="./images/logo-dark.png" 
-                alt="logo" 
-                width="135" 
-                height="17"
-                class="header__logo"
-            >
-            <p class="header__nav-mobile"></p>
-            <nav class="header__navigation-list">
-                <a href="#" class="header__navigation-item">
-                    Home
-                </a>
-                <a href="" class="header__navigation-item">
-                    Latest
-                </a>
-                <a href="" class="header__navigation-item">
-                    About
-                </a>
-            </nav>
+        <div class="container-lg">
+            <div class="header">
+                <img 
+                    src="./images/logo-dark.png" 
+                    alt="logo" 
+                    width="135" 
+                    height="17"
+                    class="header__logo"
+                >
+                <p class="header__nav-mobile"></p>
+                <nav class="header__navigation-list">
+                    <a href="#" class="header__navigation-item">
+                        Home
+                    </a>
+                    <a href="" class="header__navigation-item">
+                        Latest
+                    </a>
+                    <a href="" class="header__navigation-item">
+                        About
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="body__main">
-        <section>
+        <section class="container-lg">
             <div class="main-post">
                 <img 
                     src="./images/image.jpg"
@@ -182,7 +185,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="container-lg">
             <div class="latest-posts">
                 <h2 class="latest-posts__title">
                     LATEST POSTS
@@ -354,7 +357,7 @@
                 </button>
             </div>
         </section>
-        <section>
+        <section class="container-lg">
             <div>
                 <div class="featured-posts">
                     <h2 class="featured-posts__title">
@@ -447,118 +450,120 @@
         </section>
     </main>
     <footer class="body__footer">
-        <div class="footer">
-            <div class="footer__copyright">
-                <img 
-                src="./images/logo-light.png" 
-                alt="logo" 
-                width="135" 
-                height="17"
-                >
-                <p class="footer__copyright-text">
-                    © 2018 Noiceland™, all rights reserved
-                </p>
-            </div>
-            <div class="footer__navigation">
-                <div class="footer__categories">
-                    <h2 class="footer__subtitle-text">
-                        Categories
-                    </h2>
-                    <div class="footer__categories-list">
-                        <a href="#" class="footer__text-item">
-                            Animation
-                        </a>
-                        <a href="#" class="footer__text-item">
-                            Interactive Design
-                        </a>
-                        <a href="#" class="footer__text-item">
-                            Architecture
-                        </a>
-                        <a href="#" class="footer__text-item">
-                            Miscellaneous
-                        </a>
-                        <a href="#" class="footer__text-item">
-                            Graphic Design
-                        </a>
-                        <a href="#" class="footer__text-item">
-                            Photography
-                        </a>
-                        <a href="#" class="footer__text-item">
-                            Illustration
-                        </a>
-                        <a href="#" class="footer__text-item">
-                            Product Design
-                        </a>
+        <div class="container-lg">
+            <div class="row footer">
+                <div class="footer__copyright">
+                    <img 
+                    src="./images/logo-light.png" 
+                    alt="logo" 
+                    width="135" 
+                    height="17"
+                    >
+                    <p class="footer__copyright-text">
+                        © 2018 Noiceland™, all rights reserved
+                    </p>
+                </div>
+                <div class="footer__navigation">
+                    <div class="footer__categories">
+                        <h2 class="footer__subtitle-text">
+                            Categories
+                        </h2>
+                        <div class="footer__categories-list">
+                            <a href="#" class="footer__text-item">
+                                Animation
+                            </a>
+                            <a href="#" class="footer__text-item">
+                                Interactive Design
+                            </a>
+                            <a href="#" class="footer__text-item">
+                                Architecture
+                            </a>
+                            <a href="#" class="footer__text-item">
+                                Miscellaneous
+                            </a>
+                            <a href="#" class="footer__text-item">
+                                Graphic Design
+                            </a>
+                            <a href="#" class="footer__text-item">
+                                Photography
+                            </a>
+                            <a href="#" class="footer__text-item">
+                                Illustration
+                            </a>
+                            <a href="#" class="footer__text-item">
+                                Product Design
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <form 
+                            action="#" 
+                            method="post" 
+                            name="client-request" 
+                            class="footer__form"
+                        >
+                            <label for="client-mail" class="footer__subtitle-text">
+                                Subscribe to newsletter
+                            </label>
+                            <div class="footer__form-field">
+                                <input 
+                                type="email"
+                                name="client-mail" 
+                                id="client-mail" 
+                                placeholder="Email address"
+                                class="footer__form-input"
+                                >
+                                <button 
+                                    type="submit" 
+                                    name="submit-mail" 
+                                    class="footer__form-button"
+                                >
+                                    Email address
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div>
-                    <form 
-                        action="#" 
-                        method="post" 
-                        name="client-request" 
-                        class="footer__form"
-                    >
-                        <label for="client-mail" class="footer__subtitle-text">
-                            Subscribe to newsletter
-                        </label>
-                        <div class="footer__form-field">
-                            <input 
-                            type="email"
-                            name="client-mail" 
-                            id="client-mail" 
-                            placeholder="Email address"
-                            class="footer__form-input"
-                            >
-                            <button 
-                                type="submit" 
-                                name="submit-mail" 
-                                class="footer__form-button"
-                            >
-                                Email address
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="footer__other-info">
-                <div class="footer__other-info-section">
-                    <h3 class="footer__subtitle-text">
-                        Information
-                    </h3>
-                    <a href="#" class="footer__text-item">
-                        about
-                    </a>
-                    <a href="#" class="footer__text-item">
-                        contact
-                    </a>
-                    <a href="#" class="footer__text-item">
-                        terms
-                    </a>
-                </div>
-                <div class="footer__other-info-section">
-                    <h3 class="footer__subtitle-text">
-                        follow us
-                    </h3>
-                    <a href="#" class="footer__text-item">
-                        instagram
-                    </a>
-                    <a href="#" class="footer__text-item">
-                        facebook
-                    </a>
-                    <a href="#" class="footer__text-item">
-                        twitter
-                    </a>
-                </div>
-                <div class="footer__other-info-section">
-                    <h3 class="footer__subtitle-text">
-                        Template
-                    </h3>
-                    <a href="#" class="footer__text-item">
-                        Image License Info
-                    </a>
-                    <a href="#" class="footer__text-item">
-                        Powered by Webflow
-                    </a>
+                <div class="footer__other-info">
+                    <div class="footer__other-info-section">
+                        <h3 class="footer__subtitle-text">
+                            Information
+                        </h3>
+                        <a href="#" class="footer__text-item">
+                            about
+                        </a>
+                        <a href="#" class="footer__text-item">
+                            contact
+                        </a>
+                        <a href="#" class="footer__text-item">
+                            terms
+                        </a>
+                    </div>
+                    <div class="footer__other-info-section">
+                        <h3 class="footer__subtitle-text">
+                            follow us
+                        </h3>
+                        <a href="#" class="footer__text-item">
+                            instagram
+                        </a>
+                        <a href="#" class="footer__text-item">
+                            facebook
+                        </a>
+                        <a href="#" class="footer__text-item">
+                            twitter
+                        </a>
+                    </div>
+                    <div class="footer__other-info-section">
+                        <h3 class="footer__subtitle-text">
+                            Template
+                        </h3>
+                        <a href="#" class="footer__text-item">
+                            Image License Info
+                        </a>
+                        <a href="#" class="footer__text-item">
+                            Powered by Webflow
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
