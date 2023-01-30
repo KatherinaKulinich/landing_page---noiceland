@@ -37,6 +37,13 @@
         @include card-author;
         margin-bottom: 0;
     }
+
+    &__image {
+        &:hover {
+            scale: 1.4;
+            transition: 0.5s;
+        }
+    }
 }
 
 @media (min-width: 768px) {

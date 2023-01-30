@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    gap: 20px;
+
 
     &__navigation-list {
         display: flex;
@@ -29,5 +31,6 @@
 @media (min-width: 460px) {
     .header {
         flex-direction: row;
+        gap: 0;
     }
 }
